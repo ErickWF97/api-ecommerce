@@ -26,12 +26,13 @@ public class ProductControl {
         return productService.getProductByBrand(idBrand);
     }
 
-    @GetMapping("brand/{idCategory}")
+    @GetMapping("category/{idCategory}")
     public ResponseEntity<List<Products>> getProductByCategory(@PathVariable Integer idCategory){
         return productService.getProductByCategory(idCategory);
     }
 
-    @GetMapping("brand/{name}")
+    @GetMapping("name/{name}")
+    
     public ResponseEntity<List<Products>> getProductByName(@PathVariable String name){
         return productService.getProductByName(name);
 
