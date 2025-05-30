@@ -32,6 +32,7 @@ public class ProductControl {
     }
 
     @GetMapping("name/{name}")
+    
     public ResponseEntity<List<Products>> getProductByName(@PathVariable String name){
         return productService.getProductByName(name);
 
